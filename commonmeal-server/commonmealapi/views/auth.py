@@ -1,4 +1,5 @@
 from commonmealapi.models import User
+from commonmealapi.models import Neighborhood
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -11,11 +12,9 @@ def check_user(request):
       request -- The full HTTP request object
     '''
     uid = request.data['uid']
-
     # Use the built-in authenticate method to verify
     # authenticate returns the user object or None if no user is found
     user = User.objects.filter(uid=uid).first()
-
     # If authentication was successful, respond with their token
     if user is not None:
         data = {
@@ -25,7 +24,7 @@ def check_user(request):
             'public_profile': user.public_profile,
             'photo_url': user.photo_url,
             'address': user.address,
-            'neighborhood': user.neighborhood
+            'neighborhood': user.neighborhood.id
         }
         return Response(data)
     else:
