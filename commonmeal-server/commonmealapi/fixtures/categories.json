@@ -1,0 +1,44 @@
+[
+    {
+        "model": "commonmealapi.Category",
+        "pk": 1,
+        "fields": {
+            "name": "Vegetable"
+        }
+    },
+    {
+        "model": "commonmealapi.Category",
+        "pk": 2,
+        "fields": {
+            "name": "Fruit"
+        }
+    },
+    {
+        "model": "commonmealapi.Category",
+        "pk": 3,
+        "fields": {
+            "name": "Meat"
+        }
+    },
+    {
+        "model": "commonmealapi.Category",
+        "pk": 4,
+        "fields": {
+            "name": "Snack"
+        }
+    },
+    {
+        "model": "commonmealapi.Category",
+        "pk": 5,
+        "fields": {
+            "name": "Leftovers"
+        }
+    },
+    {
+        "model": "commonmealapi.Category",
+        "pk": 6,
+        "fields": {
+            "name": "Non-Perishable"
+        }
+    }
+]

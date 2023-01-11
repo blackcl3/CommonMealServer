@@ -1,0 +1,41 @@
+[
+    {
+        "model": "commonmealapi.FoodItem",
+        "pk": 1,
+        "fields": {
+            "name": "leftover quesabirria",
+            "uid": 1,
+            "date": "2023-01-10",
+            "photo_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbDVCBgeDqvpkJnii3VJEx5I66G867y9raIg&usqp=CAU",
+            "status": "unavailable",
+            "location": "fridge",
+            "description": "Braise beef until tender in a rich chile broth, then crisp in a corn tortilla with cheese and dip in a savory and bright consommé."
+        }
+    },
+     {
+        "model": "commonmealapi.FoodItem",
+        "pk": 2,
+        "fields": {
+            "name": "baguette",
+            "uid": 1,
+            "date": "2023-01-11",
+            "photo_url": "https://www.davidlebovitz.com/wp-content/uploads/2012/05/7306679296_20682f8f31.jpg",
+            "status": "unavailable",
+            "location": "pantry",
+            "description": "Big Bread"
+        }
+    },
+    {
+        "model": "commonmealapi.FoodItem",
+        "pk": 3,
+        "fields": {
+            "name": "pringles",
+            "uid": 1,
+            "date": "2023-01-11",
+            "photo_url": "https://p.turbosquid.com/ts-thumb/lx/HiSN1G/TR/openpringlesoriginalpotatochipscanc4dmodel002/jpg/1633468187/600x600/fit_q87/f63132f2e077b38358443852617af400e166bcf5/openpringlesoriginalpotatochipscanc4dmodel002.jpg",
+            "status": "available",
+            "location": "pantry",
+            "description": "Once you pop, the fun does not stop"
+        }
+    }
+]

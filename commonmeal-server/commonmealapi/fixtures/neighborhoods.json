@@ -1,0 +1,30 @@
+[
+    {
+        "model": "commonmealapi.Neighborhood",
+        "pk":1,
+        "fields": {
+            "name": "Nashville"
+        }
+    },
+    {
+        "model": "commonmealapi.Neighborhood",
+        "pk":2,
+        "fields": {
+            "name": "New Orleans"
+        }
+    },
+    {
+        "model": "commonmealapi.Neighborhood",
+        "pk":3,
+        "fields": {
+            "name": "Austin"
+        }
+    },
+    {
+        "model": "commonmealapi.Neighborhood",
+        "pk":4,
+        "fields": {
+            "name": "Portland"
+        }
+    }
+]
