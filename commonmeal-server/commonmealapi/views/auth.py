@@ -48,7 +48,7 @@ def register_user(request):
         public_profile=request.data['public_profile'],
         photo_url=request.data['photo_url'],
         address=request.data['address'],
-        neighborhood=request.data['neighborhood']
+        neighborhood=Neighborhood.objects.get(pk=request.data['neighborhood'])
     )
 
     # Return the user info to the client
