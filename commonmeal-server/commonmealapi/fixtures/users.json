@@ -1,0 +1,14 @@
+[
+    {
+        "model": "commonmealapi.User",
+        "pk": 1,
+        "fields": {
+            "name": "Christian Black",
+            "uid": "b7jk3WcOXmbb7jJ15MO9SZMYH2E2",
+            "public_profile": true,
+            "photo_url": "https://internationalstalinsociety.files.wordpress.com/2014/01/bugs-bunny-as-stalin-from-herr-meets-hare.jpg",
+            "address": "5055 Broadway, Nashville, TN 37203",
+            "neighborhood": 1
+        }
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "model": "commonmealapi.FoodItemCategory",
+        "pk": 1,
+        "fields": {
+            "food_item": 1,
+            "category": 5
+        }
+    },
+    {
+        "model": "commonmealapi.FoodItemCategory",
+        "pk": 2,
+        "fields": {
+            "food_item": 2,
+            "category": 4
+        }
+    },
+    {
+        "model": "commonmealapi.FoodItemCategory",
+        "pk": 3,
+        "fields": {
+            "food_item": 3,
+            "category": 6
+        }
+    },
+    {
+        "model": "commonmealapi.FoodItemCategory",
+        "pk": 3,
+        "fields": {
+            "food_item": 3,
+            "category": 5
+        }
+    }
+]
