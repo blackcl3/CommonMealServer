@@ -59,6 +59,6 @@ def register_user(request):
         'public_profile': user.public_profile,
         'photo_url': user.photo_url,
         'address': user.address,
-        'neighborhood': user.neighborhood
+        'neighborhood': user.neighborhood.id
     }
     return Response(data)
