@@ -1,9 +1,16 @@
 from django.contrib import admin
 from django.urls import path
-from commonmealapi.views import register_user, check_user
+from rest_framework import routers
+from django.conf.urls import include
+from commonmealapi.views import register_user, check_user, UserViewSet, NeighborhoodViewSet
+
+router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'users', UserViewSet, 'user')
+router.register(r'neighborhoods', NeighborhoodViewSet, 'neighborhood')
 
 urlpatterns = [
     path('register', register_user),
     path('checkuser', check_user),
     path('admin/', admin.site.urls),
+    path('', include(router.urls)),
 ]
