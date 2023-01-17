@@ -25,7 +25,7 @@
     },
     {
         "model": "commonmealapi.FoodItemCategory",
-        "pk": 3,
+        "pk": 4,
         "fields": {
             "food_item": 3,
             "category": 5
