@@ -86,6 +86,7 @@ class FoodItemViewSet(ViewSet):
             request (_type_): _description_
         """
         food_item = FoodItem.objects.get(pk=pk)
+        food_item_categories = request.data["category"]
         food_item.name = request.data["name"]
         food_item.date = request.data["date"]
         food_item.photo_url = request.data["photo_url"]
@@ -94,7 +95,17 @@ class FoodItemViewSet(ViewSet):
         food_item.description = request.data["description"]
         food_item.uid = User.objects.get(uid=request.data["uid"])
         
+        food_categories = list(FoodItemCategory.objects.filter(food_item=food_item))
         
+        if food_categories is not None:
+            for category in food_categories:
+                category.delete()
+        
+        if food_item_categories is not None:
+            for foodCategory in food_item_categories:
+                food_item_category = FoodItemCategory(
+                    food_item=food_item, category=Category.objects.get(id=foodCategory["value"]))
+                food_item_category.save()
         
         food_item.save()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
