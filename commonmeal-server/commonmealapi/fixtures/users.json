@@ -7,7 +7,19 @@
             "uid": "b7jk3WcOXmbb7jJ15MO9SZMYH2E2",
             "public_profile": true,
             "photo_url": "https://internationalstalinsociety.files.wordpress.com/2014/01/bugs-bunny-as-stalin-from-herr-meets-hare.jpg",
-            "address": "5055 Broadway, Nashville, TN 37203",
+            "address": "5055 Broadway",
+            "neighborhood": 1
+        }
+    },
+    {
+        "model": "commonmealapi.User",
+        "pk": 2,
+        "fields": {
+            "name": "Kelley Black",
+            "uid": "zIQP4gvxr7WsyMtDybkXL6krLk73",
+            "public_profile": true,
+            "photo_url": "https://i.redd.it/zgrmip7tyada1.jpg",
+            "address": "5055 Broadway",
             "neighborhood": 1
         }
     }

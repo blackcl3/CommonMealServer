@@ -92,6 +92,7 @@ class FoodItemViewSet(ViewSet):
         food_item.status = request.data["status"]
         food_item.location = request.data["location"]
         food_item.description = request.data["description"]
+        food_item.uid = User.objects.get(uid=request.data["uid"])
         
         
         
