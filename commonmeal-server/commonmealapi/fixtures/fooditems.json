@@ -37,5 +37,18 @@
             "location": "pantry",
             "description": "Once you pop, the fun does not stop"
         }
+    },
+    {
+        "model": "commonmealapi.FoodItem",
+        "pk": 4,
+        "fields": {
+            "name": "kouign-amann",
+            "uid": 2,
+            "date": "2023-01-23",
+            "photo_url": "https://static01.nyt.com/images/2023/01/25/multimedia/20Komolafe1-gptj/20Komolafe1-gptj-superJumbo.jpg?quality=75&auto=webp",
+            "status": "available",
+            "location": "freezer",
+            "description": "The kouign-amann (Breton for “butter cake”) has always been among my favorite pastries for how it manages to convey comfort with a few simple ingredients, but I’ll never forget my first bite of the bakery’s version. I leaned against the slate-blue framed glass windows of the brick storefront on a warm late-June afternoon, holding two slightly warm slices tucked neatly in a brown bag, and took my first bite. I walked away wondering what had just happened to me. That delicate slice had managed to balance light buttery layers with a deep nutty flavor and slightly caramelized crust."
+        }
     }
 ]

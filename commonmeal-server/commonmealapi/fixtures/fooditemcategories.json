@@ -25,10 +25,26 @@
     },
     {
         "model": "commonmealapi.FoodItemCategory",
-        "pk": 3,
+        "pk": 4,
         "fields": {
             "food_item": 3,
             "category": 5
+        }
+    },
+    {
+        "model": "commonmealapi.FoodItemCategory",
+        "pk": 5,
+        "fields": {
+            "food_item": 4,
+            "category": 5
+        }
+    },
+    {
+        "model": "commonmealapi.FoodItemCategory",
+        "pk": 5,
+        "fields": {
+            "food_item": 4,
+            "category": 6
         }
     }
 ]

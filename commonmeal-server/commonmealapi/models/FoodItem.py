@@ -8,3 +8,11 @@ class FoodItem(models.Model):
     status = models.CharField(max_length=50)
     location = models.CharField(max_length=50)
     description = models.CharField(max_length=200)
+
+    @property
+    def category_check(self):
+        return self.__category_check
+    
+    @category_check.setter
+    def category_check(self, value):
+        self.__category_check = value
