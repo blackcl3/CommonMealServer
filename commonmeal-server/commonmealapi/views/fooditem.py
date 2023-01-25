@@ -114,8 +114,26 @@ class FoodItemViewSet(ViewSet):
         food_item = FoodItem.objects.get(pk=pk)
         food_item.delete()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
-    
 
+    @action(methods=['put'], detail=True)
+    def giveaway(self, request, pk):
+        """PUT request for a food item to be given away"""
+        food_item = FoodItem.objects.get(pk=pk)
+        food_item.status = 'available'
+        food_item.save()
+        return Response(None, status=status.HTTP_200_OK)
+    
+    @action(methods=['put'], detail=True)
+    def claim(self, request, pk):
+        """PUT request to claim a food item"""
+        food_item = FoodItem.objects.get(pk=pk)
+        user = User.objects.get(uid=request.data['uid'])
+        if (food_item.uid.id == user.uid):
+            return Response(None, status=status.HTTP_403_FORBIDDEN)
+        food_item.uid = user
+        food_item.status = 'unavailable'
+        food_item.save()
+        return Response(None, status=status.HTTP_200_OK)
 class CategorySerializer(serializers.ModelSerializer):
     
     class Meta:
